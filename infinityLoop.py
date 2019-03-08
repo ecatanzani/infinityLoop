@@ -47,7 +47,7 @@ def main(argv):
         singleJobDone = False
         tTemplate = "{command:s}{options:s}{fileName:s}"
         dTemplate = tTemplate.format(command="./Decode",option=" -c ",fileName=fIdx)
-        while !singleJob:
+        while !singleJobDone:
             if evalProcesses(pName) < maxProc :
                 os.system(dTemplate)
                 singleJobDone = True
