@@ -31,7 +31,7 @@ def main(argv):
             listPath = arg
       elif opt in ("-p", "--process"):
             pName = arg
-      elif opt in ("-c", "--clusterize")
+      elif opt in ("-c", "--clusterize"):
             if arg == "True":
                 doCluster = True
             else:
@@ -47,7 +47,7 @@ def main(argv):
         singleJobDone = False
         tTemplate = "{command:s}{options:s}{fileName:s}"
         dTemplate = tTemplate.format(command="./Decode",option=" -c ",fileName=fIdx)
-        while !singleJobDone:
+        while singleJobDone==False:
             if evalProcesses(pName) < maxProc :
                 os.system(dTemplate)
                 singleJobDone = True
